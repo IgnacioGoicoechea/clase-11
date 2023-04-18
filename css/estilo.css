@@ -1,0 +1,224 @@
+/* colores que voy a utilizar
+#DFD9E2
+#C3ACCE
+#89909F
+#538083
+#2A7F62
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navegador */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(234, 243, 151, 1);
+    height: 20vh;
+}
+.navbar-expand-lg{
+    background-color: rgba(234, 243, 151, 1);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+
+}
+
+ul li {
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header a img {
+    width: 150px;
+}
+
+.animacion:hover {
+    transform: scale(1.2);
+    border: 2px black solid;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between
+}
+
+/* el cuerpo de la pagina */
+h1 {
+    color: #2A7F62;
+    padding: 10px 0;
+}
+
+h2 {
+    color: #538083;
+}
+
+main {
+
+    height: 100vh;
+    text-align: center;
+    background: rgb(222, 184, 135);
+    background: linear-gradient(0deg, rgba(222, 184, 135, 1) 0%, rgba(214, 232, 104, 1) 50%, rgba(234, 243, 151, 1) 100%);
+}
+
+main img {
+    width: 320px;
+}
+
+.texto-inicio {
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+}
+
+main div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+main div section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* seccion de mates */
+.mates {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* contactanos */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario input{
+    width: 250px;
+}
+.formulario select{
+    width: 250px;
+}
+.formulario p{
+    font-weight: bold;
+}
+.formulario textarea{
+    width: 251px;
+     height: 246px;
+}
+#boton {
+    width: 100px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #2A7F62;
+    font-weight: bold;
+    color: aqua;
+}
+#boton:hover{
+    background-color: black;
+    color: chartreuse;
+    transform: scale(1.05);
+    box-shadow: 7px 7px;
+}
+/* sobre sonostros */
+.nosotros{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+}
+/* forma de pago */
+.forma-de-pago{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pago{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pago li{
+    padding: 20px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pago li img{
+    width: 50px;
+}
+#mercado{
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+/* pie de pagina */
+footer {
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    background-color: rgba(222, 184, 135, 1);
+    flex-direction: column;
+   
+}
+
+footer a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 15px;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bolder;
+}
+footer hr{
+    display: flex ;
+}
+.pie{
+        display: flex;
+        justify-content: center;
+}
+
+
+@media(max-width:640px) {
+    nav ul li {
+        padding: 0 10px;
+    }
+
+    main {
+        height: auto;
+    }
+
+    main div {
+        justify-content: center
+    }
+
+    header a img {
+        width: 101px;
+    }
+}
