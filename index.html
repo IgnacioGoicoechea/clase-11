@@ -25,13 +25,17 @@
         <li class="animacion animate__animated animate__bounceInDown">
           <a href="./secciones/sobre-nosotros.html">Sobre Nosotros</a>
         </li>
-        <li class="animacion animate__animated animate__bounceInDown">
-          <a class="nav-link dropdown-toggle negrita" data-bs-toggle="dropdown" href="./mates/mates.html" role="button"
-            aria-expanded="false">Mates</a>
+        <li class="animate__animated animate__bounceInDown">
+          <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mates
+          </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./mates/camionero.html">CAMIONERO</a></li>
-            <li><a class="dropdown-item" href="./mates/imperial.html">IMPERIAL</a></li>
+            <li><a class="dropdown-item" href="./mates/camionero.html">Camionero</a></li>
+            <li><a class="dropdown-item" href="./mates/imperial.html">Imperial</a></li>
+            <li><a class="dropdown-item" href="./mates/mates.html">Todos</a></li>
           </ul>
+        </div>
         </li>
         <li class="animacion animate__animated animate__bounceInDown">
           <a href="./secciones/formas-de-pago.html">Forma de Pago</a>
@@ -49,14 +53,17 @@
     <div>
       <section class="animate__animated animate__bounceInUp">
         <img src="./imagenes/mateeeeee.png" alt="curado mate">
-        <h2>Como curar un mate</h2>
-        <p class="texto-inicio">Para curar un mate, se debe llenar el recipiente con yerba mate y agregar agua
-          caliente sin que llegue a hervir. Dejar reposar durante unas horas y vaciar el contenido. Repetir el
-          proceso varias veces hasta que la yerba mate adquiera un sabor más suave y agradable. Durante el
-          proceso, es importante no raspar la pared interior del mate, ya que esto podría dañar la superficie
-          y afectar el sabor. Una vez curado, se recomienda no lavar el mate con jabón ni utilizar objetos
-          abrasivos para limpiarlo, ya que esto podría afectar el sabor y la calidad del mate.</p>
-
+        <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Curado de Mate
+          </a>
+       
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            Para curar un mate, se debe llenar el recipiente con yerba mate y agregar agua caliente sin que llegue a hervir. Dejar reposar durante unas horas y vaciar el contenido. Repetir el proceso varias veces hasta que la yerba mate adquiera un sabor más suave y agradable.
+          </div>
+        </div>
       </section>
       <section class="animate__animated animate__bounceInUp">
         <img src="./imagenes/mateeeeee.png" alt="mate">
@@ -76,9 +83,9 @@
   <Footer>
     <hr>
     <section class="pie animate__animated animate__lightSpeedInRight">
-      <a href="./secciones/Contacto.html">Contacto</a>
+      <a href="./secciones/contacto.html">Contacto</a>
       <a href="https://www.instagram.com/mateup_ros/" target="_blank">instagram</a>
-      <a href="./secciones/FormasDePago.html">Pagos</a>
+      <a href="./secciones/formas-de-pago.html">Pagos</a>
     </section>
 
   </Footer>
