@@ -23,7 +23,8 @@ header {
     background-color: rgba(234, 243, 151, 1);
     height: 20vh;
 }
-.navbar-expand-lg{
+
+.navbar-expand-lg {
     background-color: rgba(234, 243, 151, 1);
 }
 
@@ -44,6 +45,11 @@ header nav ul li a {
     font-weight: bold;
 }
 
+.negrita {
+    font-weight: bolder;
+    color: black;
+}
+
 header a img {
     width: 150px;
 }
@@ -61,17 +67,19 @@ nav {
 
 /* el cuerpo de la pagina */
 h1 {
-    color: #2A7F62;
+    color: #171a19;
     padding: 10px 0;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
 }
 
 h2 {
-    color: #538083;
+    color: #374546;
 }
 
 main {
 
-    height: 100vh;
+
     text-align: center;
     background: rgb(222, 184, 135);
     background: linear-gradient(0deg, rgba(222, 184, 135, 1) 0%, rgba(214, 232, 104, 1) 50%, rgba(234, 243, 151, 1) 100%);
@@ -82,46 +90,128 @@ main img {
 }
 
 .texto-inicio {
-    width: 250px;
+    width: 320px;
     text-align: center;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 main div {
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-around
 }
-main div section{
+
+main div section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 /* seccion de mates */
 .mates {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+main a{
+    text-decoration: none;
+    color: #171a19;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+main a:hover{
+    transform: scale(1.1);
+}
+.todos-los-mates {
+    height: 70vh;
+}
+
+.grid-conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "imagen1 imagen2 imagen3"
+        "imagen4 imagen5 imagen6"
+    ;
+    margin: 50px auto;
+    width: 600px;
+    height: 600px;
+
+}
+
+.imagen {
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.319)
+}
+
+.imagen:hover {
+    transform: scale(1.1);
+}
+
+.imagen1 {
+    grid-area: imagen1;
+    background-image: url("../imagenes/camionero.jfif");
+}
+
+.imagen2 {
+    grid-area: imagen2;
+    background-image: url('../mates/camionero/WhatsApp\ Image\ 2023-03-31\ at\ 11.55.56\ AM.jpeg');
+}
+
+.imagen3 {
+    grid-area: imagen3;
+    background-image: url('../mates/camionero/WhatsApp\ Image\ 2023-04-19\ at\ 1.16.05\ PM\ \(1\).jpeg');
+}
+
+.imagen4 {
+    grid-area: imagen4;
+    background-image: url('../imagenes/imperial.jfif');
+}
+
+.imagen5 {
+    grid-area: imagen5;
+    background-image: url('../mates/imperial/imperial.jpeg');
+}
+
+.imagen6 {
+    grid-area: imagen6;
+    background-image: url('../mates/imperial/WhatsApp\ Image\ 2023-04-19\ at\ 1.16.05\ PM.jpeg');
+}
+
+
 /* contactanos */
-.formulario{
+
+.formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.formulario input{
+
+.formulario input {
     width: 250px;
 }
-.formulario select{
+
+.formulario select {
     width: 250px;
 }
-.formulario p{
+
+.formulario p {
     font-weight: bold;
 }
-.formulario textarea{
+
+.formulario textarea {
     width: 251px;
-     height: 246px;
+    height: 246px;
 }
+
 #boton {
     width: 100px;
     margin: 10px;
@@ -130,51 +220,68 @@ main div section{
     font-weight: bold;
     color: aqua;
 }
-#boton:hover{
+
+#boton:hover {
     background-color: black;
     color: chartreuse;
     transform: scale(1.05);
     box-shadow: 7px 7px;
 }
+
 /* sobre sonostros */
-.nosotros{
+iframe {
+    height: 300px;
+    width: 300px;
+}
+
+.nosotros {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.sobre-nosotros{
+
+.sobre-nosotros {
     display: flex;
-    flex-direction: column;
-    width: 250px;
+    width: 300px;
     align-items: center;
+    padding: 10px;
 }
+
 /* forma de pago */
-.forma-de-pago{
+.forma-de-pago {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.pago{
+
+.pago {
     display: flex;
     flex-direction: column;
 
 }
 
-.pago li{
+.main-pago {
+    height: 70vh;
+}
+
+.pago li {
     padding: 20px;
     font-weight: bolder;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.pago li img{
+
+.pago li img {
     width: 50px;
 }
-#mercado{
+
+#mercado {
     width: 100px;
     display: flex;
     align-items: center;
 }
+
 
 /* pie de pagina */
 footer {
@@ -183,7 +290,7 @@ footer {
     text-align: center;
     background-color: rgba(222, 184, 135, 1);
     flex-direction: column;
-   
+
 }
 
 footer a {
@@ -196,22 +303,33 @@ footer a {
     text-decoration: none;
     font-weight: bolder;
 }
-footer hr{
-    display: flex ;
+
+footer hr {
+    display: flex;
 }
-.pie{
-        display: flex;
-        justify-content: center;
+
+.pie {
+    display: flex;
+    justify-content: center;
 }
 
 
 @media(max-width:640px) {
     nav ul li {
-        padding: 0 10px;
+        padding: 0 7px;
     }
 
-    main {
-        height: auto;
+    nav ul {
+        padding: 0;
+    }
+
+    main h1 {
+        padding: 15px;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: column;
     }
 
     main div {
@@ -221,4 +339,26 @@ footer hr{
     header a img {
         width: 101px;
     }
+
+    .nosotros {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-conteiner {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 300px;
+        grid-template-areas:
+            "imagen1 imagen2"
+            "imagen3 imagen3"
+            "imagen4 imagen5"
+            "imagen6 imagen6"
+        ;
+    }
+    .todos-los-mates{
+        height: 84vh;
+    }
+    
 }
